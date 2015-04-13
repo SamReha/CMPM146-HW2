@@ -1,3 +1,5 @@
+import math
+
 class Node:
     """ A node in the game tree. Note wins is always from the viewpoint of player.
         Crashes if state not specified.

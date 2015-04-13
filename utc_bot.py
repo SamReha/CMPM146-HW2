@@ -1,7 +1,6 @@
 import time
 import random
-import math
-import node
+import node as Node
 
 def think(rootstate, quip):
     # Returns a float representing the difference between the score of me and the other player
@@ -14,7 +13,7 @@ def think(rootstate, quip):
     """ Conduct a UCT search for at most 1 second starting from rootstate.
         Return the best move from the rootstate.
         Never rolls out beyond the MAX_DEPTH"""
-    rootnode = Node(state = rootstate)
+    rootnode = Node.Node(state = rootstate)
     me = rootstate.get_whos_turn()
     rollouts = 0
     startTime = time.clock()
