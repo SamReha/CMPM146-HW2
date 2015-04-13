@@ -1,5 +1,6 @@
 import time
 import random
+import math
 import node as Node
 
 MAX_DEPTH = 5
